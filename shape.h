@@ -6,6 +6,7 @@ using namespace std;
 
 class shape {
 	public:
+		int temperature;
 		shape() {};
 		virtual ~shape() {};
 		static shape* In(ifstream &ifst);

@@ -5,4 +5,5 @@ using namespace std;
 
 void parallelepiped::InData(ifstream &ifst) {
 	ifst >> a >> b >> c >> d;
+	shape::InData(ifst);
 }

@@ -8,4 +8,6 @@ void parallelepiped::Out(ofstream &ofst) {
 		<< a << ", b = " << b
 		<< ", c = " << c
 		<< ", Density = " << d << endl;
+	shape::Out(ofst);
+	ofst << endl;
 }
