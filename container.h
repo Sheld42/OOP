@@ -13,4 +13,6 @@ public:
 	void Out(ofstream &ofst);  // вывод фигур
 	void Clear();  // очистка контейнера от фигур
 	void Sort();
+	void OutBall(ofstream &ofst);
+	void OutParallelepiped(ofstream &ofst);
 };

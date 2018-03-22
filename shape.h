@@ -14,5 +14,7 @@ class shape {
 		virtual void Out(ofstream &ofst) = 0;
 		virtual double Volume() = 0;
 		bool Compare(shape &other);
+		virtual void OutBall(ofstream &ofst);
+		virtual void OutParallelepiped(ofstream &ofst);
 };
 #endif

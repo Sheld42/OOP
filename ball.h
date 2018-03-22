@@ -10,6 +10,7 @@ class ball :public shape {
 		void InData(ifstream &ifst);
 		void Out(ofstream &ofst);
 		double Volume();
+		void OutBall(ofstream &ofst);
 		ball() {};
 		~ball() {};
 };
