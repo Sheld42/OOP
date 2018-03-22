@@ -8,6 +8,7 @@ class parallelepiped : public shape {
 	public:
 		void InData(ifstream &ifst);
 		void Out(ofstream &ofst);
+		double Volume();
 		parallelepiped() {};
 		~parallelepiped() {};
 };
