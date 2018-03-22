@@ -9,6 +9,8 @@ class tetraedr :public shape {
 public:
 	void InData(ifstream &ifst);
 	void Out(ofstream &ofst);
+	double Volume();
+	void OutTetraedr(ofstream &ofst);
 	tetraedr() {};
 	~tetraedr() {};
 };

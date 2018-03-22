@@ -4,7 +4,6 @@
 
 using namespace std;
 
-void tetraedr::InData(ifstream &ifst) {
-	ifst >> a >> d;
-	shape::InData(ifst);
+double tetraedr::Volume() {
+	return a*a*a;
 }

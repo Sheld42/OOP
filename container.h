@@ -15,4 +15,5 @@ public:
 	void Sort();
 	void OutBall(ofstream &ofst);
 	void OutParallelepiped(ofstream &ofst);
+	void OutTetraedr(ofstream &ofst);
 };

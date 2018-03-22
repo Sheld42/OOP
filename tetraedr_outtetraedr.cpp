@@ -4,7 +4,6 @@
 
 using namespace std;
 
-void tetraedr::InData(ifstream &ifst) {
-	ifst >> a >> d;
-	shape::InData(ifst);
+void tetraedr::OutTetraedr(ofstream &ofst) {
+	Out(ofst);
 }

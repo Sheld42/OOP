@@ -6,6 +6,6 @@
 
 using namespace std;
 
-bool shape::Compare(shape &other) {
-	return Volume() < other.Volume();
-} 
+void shape::OutTetraedr(ofstream &ofst) {
+	ofst << endl;
+}

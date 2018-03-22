@@ -16,5 +16,6 @@ class shape {
 		bool Compare(shape &other);
 		virtual void OutBall(ofstream &ofst);
 		virtual void OutParallelepiped(ofstream &ofst);
+		virtual void OutTetraedr(ofstream &ofst);
 };
 #endif
