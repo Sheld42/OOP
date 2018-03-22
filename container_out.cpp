@@ -12,5 +12,6 @@ void container::Out(ofstream &ofst)
 	for (int i = 0; i < len; i++) {
 		ofst << i + 1 << ": ";
 		cont[i]->Out(ofst);
+		ofst << "volume = " << cont[i]->Volume() << endl;
 	}
 }
