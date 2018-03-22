@@ -2,6 +2,7 @@
 #include "shape.h"
 #include "ball.h"
 #include "parallelepiped.h"
+#include "tetraedr.h"
 
 using namespace std;
 
@@ -15,6 +16,9 @@ shape* shape::In(ifstream &ifst) {
 		break;
 	case 2:
 		sp = new parallelepiped;
+		break;
+	case 3:
+		sp = new tetraedr;
 		break;
 	default:
 		return 0;
