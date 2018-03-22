@@ -12,4 +12,6 @@ public:
 	void In(ifstream &ifst);  // ввод фигур
 	void Out(ofstream &ofst);  // вывод фигур
 	void Clear();  // очистка контейнера от фигур
+	void OutBall(ofstream &ofst);
+	void OutParallelepiped(ofstream &ofst);
 };
