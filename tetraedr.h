@@ -4,9 +4,10 @@
 #include "shape.h"
 
 class tetraedr :public shape {
+public:
 	int a;
 	float d;
-public:
+
 	void InData(ifstream &ifst);
 	void Out(ofstream &ofst);
 	double Volume();

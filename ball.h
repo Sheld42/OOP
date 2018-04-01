@@ -4,9 +4,9 @@
 #include "shape.h"
 
 class ball :public shape {
-	int r;
-	float d;
 	public:
+		int r;
+		float d;
 		void InData(ifstream &ifst);
 		void Out(ofstream &ofst);
 		double Volume();

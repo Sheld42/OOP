@@ -2,10 +2,11 @@
 
 // Простейший контейнер на основе одномерного массива
 class container {
+public:
 	enum { max_len = 100 }; // максимальная длина
 	int len; // текущая длина
 	shape *cont[max_len];
-public:
+
 	container();   // инициализация контейнера
 	~container() { Clear(); }   // утилизация контейнера
 

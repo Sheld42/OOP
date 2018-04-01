@@ -3,9 +3,9 @@
 #include "shape.h"
 
 class parallelepiped : public shape {
-	int a, b, c;
-	float d;
 	public:
+		int a, b, c;
+		float d;
 		void InData(ifstream &ifst);
 		void Out(ofstream &ofst);
 		double Volume();
