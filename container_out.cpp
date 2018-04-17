@@ -6,9 +6,15 @@
 
 using namespace std;
 
+void CheckOutputFile(ofstream &ofst);
+
 void container::Out(ofstream &ofst)
 {
-	ofst << "Container contents " << len << " elements." << endl;
+	CheckOutputFile(ofst);
+	if (len)
+		ofst << "Container contains " << len << " elements." << endl;
+	else
+		ofst << "Container is empty:\n";
 	for (int i = 0; i < len; i++) {
 		ofst << i + 1 << ": ";
 		cont[i]->Out(ofst);

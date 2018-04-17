@@ -3,11 +3,12 @@
 #include "container.h"
 #include "gtest/gtest.h"
 #include "Test.h"
+#include "Protect.h"
 
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	/*if (argc != 3) {
+	if (argc != 3) {
 		cout << "incorrect command line! "
 			 "Waited: command infile outfile" << endl;
 		exit(1);
@@ -15,6 +16,7 @@ int main(int argc, char* argv[]) {
 	
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
+	CheckInputFile(ifst);
 	cout << "Start" << endl;
 	container c;
 	c.In(ifst);
@@ -25,7 +27,11 @@ int main(int argc, char* argv[]) {
 	ofst << "Empty container. " << endl;
 	c.Out(ofst);
 	cout << "Stop" << endl;
-	return 0;	*/
-	::testing::InitGoogleTest(&argc, argv);
-	return RUN_ALL_TESTS();
+	
+	ifst.close();
+	ofst.close();
+	
+	return 0;	
+	/*::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();*/
 }

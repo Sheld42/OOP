@@ -5,7 +5,9 @@
 #include "tetraedr.h"
 
 using namespace std;
+void CheckOutputFile(ofstream &ofst);
 
 void shape::Out(ofstream &ofst) {
+	CheckOutputFile(ofst);
 	ofst << "temperature = " << temperature;
 }

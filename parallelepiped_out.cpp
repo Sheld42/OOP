@@ -2,8 +2,10 @@
 #include "parallelepiped.h"
 
 using namespace std;
+void CheckOutputFile(ofstream &ofst);
 
 void parallelepiped::Out(ofstream &ofst) {
+	CheckOutputFile(ofst);
 	ofst << "It is Parallelepiped: a = "
 		<< a << ", b = " << b
 		<< ", c = " << c
