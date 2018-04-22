@@ -11,6 +11,10 @@ class ball :public shape {
 		void Out(ofstream &ofst);
 		double Volume();
 		void OutBall(ofstream &ofst);
+		void Multimethod(shape* s, ofstream &outFile);
+		void CheckWithBall(ofstream &outFile);
+		void CheckWithParallelepiped(ofstream &outFile);
+		void CheckWithTetraedr(ofstream &outFile);
 		ball() {};
 		~ball() {};
 };

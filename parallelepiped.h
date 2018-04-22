@@ -10,6 +10,10 @@ class parallelepiped : public shape {
 		void Out(ofstream &ofst);
 		double Volume();
 		void OutParallelepiped(ofstream &ofst);
+		void Multimethod(shape* s, ofstream &outFile);
+		void CheckWithBall(ofstream &outFile);
+		void CheckWithParallelepiped(ofstream &outFile);
+		void CheckWithTetraedr(ofstream &outFile);
 		parallelepiped() {};
 		~parallelepiped() {};
 };

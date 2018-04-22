@@ -12,6 +12,10 @@ public:
 	void Out(ofstream &ofst);
 	double Volume();
 	void OutTetraedr(ofstream &ofst);
+	void Multimethod(shape* s, ofstream &outFile);
+	void CheckWithBall(ofstream &outFile);
+	void CheckWithParallelepiped(ofstream &outFile);
+	void CheckWithTetraedr(ofstream &outFile);
 	tetraedr() {};
 	~tetraedr() {};
 };

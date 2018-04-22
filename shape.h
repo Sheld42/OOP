@@ -17,5 +17,10 @@ class shape {
 		virtual void OutBall(ofstream &ofst);
 		virtual void OutParallelepiped(ofstream &ofst);
 		virtual void OutTetraedr(ofstream &ofst);
+		virtual void Multimethod(shape* s, ofstream &outFile) = 0;
+		virtual void CheckWithBall(ofstream &outFile) = 0;
+		virtual void CheckWithParallelepiped(ofstream &outFile) = 0;
+		virtual void CheckWithTetraedr(ofstream &outFile) = 0;
+
 };
 #endif

@@ -21,13 +21,8 @@ int main(int argc, char* argv[]) {
 	container c;
 	c.In(ifst);
 	ofst << "Filled container. " << endl;
-	c.Sort();
-	c.OutTetraedr(ofst);
-	c.Clear();
-	ofst << "Empty container. " << endl;
-	c.Out(ofst);
+	c.Multimethod(ofst);
 	cout << "Stop" << endl;
-	
 	ifst.close();
 	ofst.close();
 	
